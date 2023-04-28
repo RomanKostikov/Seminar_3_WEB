@@ -5,10 +5,11 @@
 // - Необходимо у пользователя запросить имя и вызвать функцию greeting, передав туда полученное от пользователя значение.
 
 function gretting() {
-    let name = prompt('Как вас зовут?');
-    msg = `Привет, ${name}!`
-    alert(msg)
-};
+    const name = prompt('Как вас зовут?');
+    const msg = `Привет, ${name}!`;
+    // alert(msg);
+    console.log(msg);
+}
 
 gretting();
-console.log(msg);
+// console.log(msg);

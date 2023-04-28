@@ -10,6 +10,6 @@
 // Примечания: Пользователь всегда вводит корректное число.
 // Советую округлить значение после расчетов, так как в некоторых случаях может получиться "длинная дробь".
 
-Math.round
-let user_input = Number.parseInt(prompt('Введите температуру в градусах Цельсия'));
-alert(`Цельсия: ${user_input}\nФаренгейт: ${Math.round((9 / 5) * user_input + 32)}`)
+const celsius = Number.parseFloat(prompt('Введите температуру в градусах Цельсия'));
+const fahrenheit = (9 / 5) * celsius + 32;
+alert(`Цельсия: ${celsius}\nФаренгейт: ${fahrenheit.toFixed(2)}`);
